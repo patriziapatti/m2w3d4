@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <style>
+        table, tr, td{
+            border: 1px solid black;
+        }
+        table {width: 100%;}
+        td {width: 25%; padding: 10px;text-align: center;}
+
+        .nuovoStile {background-color: yellow;}
+
+        .visibilityImg {visibility: hidden;}
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="nome">Patrizia's phones</h1>
+        <button type="button" onclick="modificaH1 ()">Modifica l'h1</button>
+        <button type ="button" onclick="modificaSfondo ()"> Cambia il colore di sfondo</button>
+        <button type ="button" onclick="modificaIndirizzo ()"> Cambia l'indirizzo del futuro o footer</button>
+        <button type="button" onclick="aggiungiClasse()">Aggiungi Classe CSS</button>
+        <button type="button" onclick="nascondiImg ()">Nascondi/scopri l'immagine</button>
+        <button type="button" onclick="colorePrezzo ()">Cambia colore del prezzo</button>
+
+        <table id="tabella">
+            <tr>
+                <td><img src="assets/iphone15.1.jpg" alt="iPhone 15"></td>
+                <td>iPhone 15 <br><p><a href="https://www.amazon.co.uk/Apple-iPhone-15-Pro-128/dp/B0CHWWM3JH/ref=sr_1_4?crid=16U9MWOFMJQUE&dib=eyJ2IjoiMSJ9.-pUuQ3nQPOSZQrvJmIOfWGAoQwv9jxunf9bBiWz5QL5TdpjWZTKVfmOqQOVmccDfpmjuqEXnfwaO9yAxqWnsACYf9Xor4b_MSVsHd_wtGzHPyG873koflfHvW7HtwrcsclsCaTar_D63cRb_f76v1A6P7BsG8kiEv1Xb_h5uLNnRt2mjUoz0sbJMpmsIbMocYuzBj6ycGjRfFkuczzls8blscovUL-TuVicdYeg6HrE.Y4XT81kxJ2XhylgCfLvuAnc4FQcyvIGzP5w-szpvokc&dib_tag=se&keywords=iphone+15&qid=1711738777&sprefix=iphone+15%2Caps%2C83&sr=8-4">Link Amazon.co.uk</a></p></td>
+                <td> iPhone 15 gode di un display OLED da 6.1 pollici e una risoluzione di 2556x1179 pixel. Il processore è l'A16 Bionic, lo stesso della versione Pro e Pro Max della serie degli iPhone 14. La fotocamera, rispetto al modello base della serie successiva, ha subito un importante miglioramento, con ben 48 megapixel.</td>
+                <td class="prz"> 1129€</td>
+                <td><form>
+                    <label>Lascia un commento su questo prodotto</label><br>
+                    <textarea cols="50" rows="10"></textarea><br>
+                    <input type="submit">
+                </form></td>
+
+            </tr>
+            <tr>
+                <td><img src="assets/iphone 14.jpg" alt="iPhone 14"></td>
+                <td>iPhone 14<br><p><a href="https://www.amazon.co.uk/Apple-iPhone-14-128GB-Midnight/dp/B0BNLXKVNQ/ref=sr_1_5?crid=X0EOSACSD4GO&dib=eyJ2IjoiMSJ9.IhXUmiqWeIEpcdR_abPAtFWgMGs4nBtA9qPWm71LasTw25rSBESJYc42R7GFebgDLF6hVZqe1-GdwUvGJ0kzhptCbTIWXfzYde0CvdQRPPKqgd42RjOwyOVsygp0CFvgYi19DStE5lv1y4ABzBJrGCJZPK_da3ZeTJglvWCrzzHWHCwM1p2DUjZwCVTyYiNZoxGrixi5j2dSdPfracD9mZRzGqKcWNhP_jsX1BGyM24.orxaBg9BIFb9oChlP_8ELfvOj6UDS1KZ0VqLRpkSxdI&dib_tag=se&keywords=iphone+14&qid=1711738667&sprefix=iphone+14%2Caps%2C85&sr=8-5">Link Amazon.co.uk</a></p></td>
+                <td> iPhone 14 dispone di un display OLED da 6.1 pollici e una risoluzione di 1170 x 2532 pixel. Come il suo predecessore è dotato di un chip A15 Bionic con un processore a 6 core e una CPU a 5 core, per garantire prestazioni elevate e un'elevata efficienza anche per le attività più impegnative.
+                </td>
+                <td class="prz"> 987€</td>
+                <td><form>
+                    <label>Lascia un commento su questo prodotto</label><br>
+                    <textarea cols="50" rows="10"></textarea><br>
+                    <input type="submit">
+                </form></td>
+            
+
+            </tr>
+            <tr>
+                <td><img src="assets/iphone 13 pro.jpg" alt="iPhone 13 Pro"></td>
+                <td>iPhone 13 Pro <br><p><a href="https://www.amazon.co.uk/Apple-iPhone-128GB-Sierra-Renewed-Blue/dp/B09MGFQ684/ref=sr_1_3?crid=1UTU6Z3U8286D&dib=eyJ2IjoiMSJ9.OqSPCk5_VxrmT9TW5yRFRBfe8ZZuzr8bArUIyZitLhb_40-jy0KgmnWgkdWt1jhZnQHSJvJICQgP0VwBvZe5Vu6AIbr3FGERqgN6qucuki4xC_R13gfBK49o5Nw5STDqu2J9-rWIhZNvcENurupWTIbnDDJDm_CnEA4pFQ6Q3ZRjtyxv_R31mshcqM-yamXs3b8n14x6fy7Ix6AaYWl82VtfCSOnHMRkcu68bfr8nrU.IkQ9MlFpgaGEp9EHTOy7tBrwzH3FgZEPqeC16o7kcJI&dib_tag=se&keywords=iphone+13+pro&qid=1711738696&sprefix=iphone+13+pro%2Caps%2C75&sr=8-3">Link Amazon.co.uk</a></p></td>
+                <td> iPhone 13 Pro è uno degli smartphone top di gamma di Apple annunciati nel 2021. E' basato su un display Super Retina XDR OLED con cornici di dimensioni ridotte, dalla risoluzione di 1170 x 2532 pixel e diagonale di 6,1 pollici. Il refresh rate è di 120Hz, mentre quale sistema operativo troviamo il proprietario iOS.</td>
+                <td class="prz"> 889€</td>
+                <td><form>
+                    <label>Lascia un commento su questo prodotto</label><br>
+                    <textarea cols="50" rows="10"></textarea><br>
+                    <input type="submit">
+                </form></td>
+             
+
+            </tr>
+            <tr>
+                <td><img src="assets/iphone 12.jpg" alt="iPhone 12"></td>
+                <td>iPhone 12<br><p><a href="https://www.amazon.co.uk/Apple-iPhone-12-64GB-Blue/dp/B08PCFHLGC/ref=sr_1_3?crid=1HVB6T64U58WW&dib=eyJ2IjoiMSJ9.eoVw01COEI-W88bJGbm6kj52BlOfnj8DS1ch2i3JQE9RAPnLQJCUUfCdhGmsYOMtoC4-bkUT9YuG3-fMapG7d_t2EHlCh9ZvbltAD6h98nkKSEgeKz5TVl9d94P4PGzDoL3aEvGr198_antcVH10nH44JLTJOTA6AYcD2rodwNy3-Y8zVRe63kTqz4bmCinQDpW8k8LeiSmzhcJsibb4aBsv-T-Sn_r-jWmZ6FqndlU.ecBorzpK7JMm6bJVGcq7YmALuvCBiFCSCLTIOJbLlMk&dib_tag=se&keywords=iphone+12&qid=1711738724&sprefix=iphone+12%2Caps%2C91&sr=8-3">Link Amazon.co.uk</a></p></td>
+                <td> iPhone 12 dispone di un ottimo display da 6.1 pollici con una risoluzione di 1170 x 2532 con tecnologia OLED. Sul versante hardware, iPhone 12 dispone di un SOC Apple A14 Bionic e ha 4GB di ram. Per quanto riguarda la batteria, è una 2815 mAH che garantisce delle buone prestazioni in termini di autonomia.</td>
+                <td class="prz"> 1200€</td>
+                <td><form>
+                    <label>Lascia un commento su questo prodotto</label><br>
+                    <textarea cols="50" rows="10"></textarea><br>
+                    <input type="submit">
+                </form></td>
+           
+
+            </tr>
+            <tr>
+                <td><img src="assets/iphone X.jpg" alt="iPhone X"></td>
+                <td>iPhone X<br><p><a href="https://www.amazon.co.uk/Apple-iPhone-64GB-Space-Renewed-Grey/dp/B0797QCXTJ/ref=sr_1_3?crid=2ISU1LUJ1G3V6&dib=eyJ2IjoiMSJ9.wR7W3ey_K7fXJccDVH1PB26Nv3RMea1T3p4oNkgi1UXoQ8wIhDrukP4Is658PcaH6H9jtwacdCZBNCfV5u7ElRHfkc80HFX_b1b3r6unpD2yeK4yL26d5KTC9MLWN71-s9r38ltLTdkxE1riXoKqQXQd2nEf8zqqqyfZZfO6wmudXPnYqXeHABGEMZ4yMWqzRgalCvwi3dslNg4CJfI2uk5uldxWDDULtJ3t2TLrYdI.8yga4DlF1ahifvuPJYTh8O4LzRuFap54jfOlpB5YHKo&dib_tag=se&keywords=iphone+x&qid=1711738754&sprefix=iphone+x%2Caps%2C75&sr=8-3">Link Amazon.co.uk</a></p></td>
+                <td> iPhone X fa uso di un processore esa-core da 2,39 GHz, di 3 GB di RAM e di un doppio sistema fotografico per il posteriore con due moduli da 12 MP e stabilizzazione ottica. La batteria è da 2716 mAh e può essere caricata via wireless con accessori venduti separatamente rispetto alla dotazione d'acquisto.</td>
+                <td class="prz"> 749€</td>
+                <td><form>
+                    <label>Lascia un commento su questo prodotto</label><br>
+                    <textarea cols="50" rows="10"></textarea><br>
+                    <input type="submit">
+                </form></td>
+        
+
+            </tr>
+        </table>
+    </div>
+   
+    <script src="s3p2-scaricabile.js"></script>
+</body>
+<footer>
+    <h3>Patrizia's phones <span>Via Roma, 50 - 90100 Palermo - Italia</span> </h3>
+</footer>
+</html>
